@@ -3,15 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Entities.Concrete
+namespace Entities.DTOs
 {
-    // Bir class'ın default "internal class Product"
-    public class Product : IEntity
+    public class ProductDetailDto : IDto
     {
+        //Data Transformation Object
         public int ProductId { get; set; }
-        public int CategoryId { get; set; }
         public string ProductName { get; set; }
+        public string CategoryName { get; set; }
         public short UnitsInStock { get; set; }
-        public decimal UnitPrice { get; set; }
     }
 }
